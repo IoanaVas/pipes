@@ -1,0 +1,79 @@
+{
+  "name": "pipes",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ivoryio/ivory-react-scripts": "0.9.1",
+    "@ivoryio/kogaio": "^0.5.1",
+    "aws-amplify": "^1.1.28",
+    "aws-amplify-react": "^2.3.8",
+    "formik": "^1.5.4",
+    "frint": "^5.7.2",
+    "frint-react": "^5.7.2",
+    "javascript-state-machine": "^3.1.0",
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "node_modules/.bin/eslint ./",
+    "test:unit": "react-scripts test",
+    "test:e2e": "./node_modules/.bin/cypress run",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add ."
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "cypress": "^3.2.0",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "5.16.0",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-cypress": "^2.2.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "mocha": "5.2.0",
+    "mochawesome": "^3.1.2",
+    "prop-types": "^15.7.2",
+    "react-test-renderer": "^16.8.6",
+    "react-testing-library": "^7.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
