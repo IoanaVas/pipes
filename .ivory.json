@@ -1,3 +1,14 @@
 {
-    "name": "pipes"
+    "name": "pipes",
+    "credentials": {
+        "region": "us-east-1",
+        "profile": "default"
+    },
+    "domain": "ivory.io",
+    "subdomain": "pipes",
+    "buildArtifactsBucket": {
+        "name": "ivory-pipes-build-artifacts",
+        "location": "/ivory-pipes-build-artifacts"
+    },
+    "userPoolARN": "arn:aws:cognito-idp:us-east-1:399198887006:userpool/us-east-1_bTq9BMRTX"
 }

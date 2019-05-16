@@ -1,1 +1,6 @@
-[]
+[
+    {
+        "name": "hello",
+        "endpoint": "https://5bh1u4e6m2.execute-api.us-east-1.amazonaws.com/dev/"
+    }
+]

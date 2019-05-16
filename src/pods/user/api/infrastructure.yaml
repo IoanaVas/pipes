@@ -6,14 +6,17 @@ Parameters:
   IdentityPoolPrefix:
     Type: String
     Description: The prefix used in naming the IdentityPool
+    Default: "ioana"
 
   ProjectPrefix:
     Type: String
     Description: Project prefix used to name the Cognito user pool
+    Default: "ioana"
 
   StageName:
     Type: String
     Description: Application stage name
+    Default: "ioana"
 
 Resources:
   PreSignupLambdaFunction:
